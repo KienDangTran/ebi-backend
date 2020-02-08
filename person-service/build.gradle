@@ -1,0 +1,5 @@
+dependencies {
+  implementation(project(":common"))
+  implementation("org.flywaydb:flyway-gradle-plugin:6.2.1")
+  runtimeOnly("com.h2database:h2")
+}

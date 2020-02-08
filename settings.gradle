@@ -1,0 +1,4 @@
+rootProject.name = 'ebi-backend'
+include 'person-service'
+include 'common'
+

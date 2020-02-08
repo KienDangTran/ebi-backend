@@ -1,0 +1,14 @@
+logging:
+  level:
+    com.ebi: ${LOG_LEVEL:debug}
+    root: info
+#    org.hibernate:
+#      SQL: trace
+#      type: trace
+
+spring:
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE:default}
+  output:
+    ansi:
+      enabled: always
