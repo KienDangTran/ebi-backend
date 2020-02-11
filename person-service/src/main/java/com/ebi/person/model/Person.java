@@ -35,14 +35,9 @@ public class Person {
 
   private String favouriteColour;
 
-  @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
   @OneToMany(cascade = CascadeType.ALL,
              mappedBy = "person",
              fetch = FetchType.LAZY,
              orphanRemoval = true)
   private Set<Hobby> hobbies = new HashSet<>();
-
-  public Set<String> getHobby() {
-    return hobbies.stream().map(Hobby::getName).collect(Collectors.toUnmodifiableSet());
-  }
 }

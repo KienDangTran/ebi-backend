@@ -7,9 +7,6 @@ CREATE TABLE person (
     favourite_colour VARCHAR(250)
 );
 
-INSERT INTO person (first_name, last_name, age, favourite_colour)
-VALUES ('John', 'Wick', '48', 'black');
-
 DROP TABLE IF EXISTS hobby;
 CREATE TABLE hobby (
     id        LONG AUTO_INCREMENT PRIMARY KEY,
